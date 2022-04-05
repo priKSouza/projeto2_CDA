@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="texto-principal">Digite uma mensagem para ser codificada:</p>
+
+    <form class="form">
+      <input id="campo-texto" type="text" placeholder="Digite aqui" />
+
+      <label for="cesar">
+        <input type="radio" name="cesar" id="cesar" /> Cifra de Cesar</label>
+
+      <label for="base">
+        <input type="radio" name="base" id="base" /> base64</label>
+
+      <button onclick="codifica()" type="submit">Codificar</button>
+      <button onclick="decodifica()" type="submit">Decodificar</button>
+    </form>
+
+    <div>
+      <p class="resultado" id="resultadoCesar"></p>
+    </div>
+    <div>
+      <p class="resultado" id="resultadoBase"></p>
+    </div>
+    
+    <script src="./index.js"></script> 
+  </body>
+</html>
