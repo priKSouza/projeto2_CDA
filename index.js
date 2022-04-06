@@ -6,8 +6,6 @@ function codifica() {
   resultadoB.innerHTML = base;
 }
 
-codifica();
-
 function decodifica() {
   var teste = document.getElementById("campo-texto").value;
   var resultadoB = document.getElementById("resultadoBase");
@@ -15,5 +13,3 @@ function decodifica() {
   var base = atob(teste);
   resultadoB.innerHTML = base;
 }
-
-decodifica();
