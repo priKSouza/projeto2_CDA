@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 
 body {
+  box-sizing: border-box;
   font-family: "Staatliches", cursive;
   margin: 25vh;
   background-image: radial-gradient(
@@ -60,6 +61,18 @@ label {
   /* text-shadow: #f2f2f2 0.1em 0.1em 0.6em; */
 }
 
+#number {
+  width: 30%;
+  margin: auto;
+  border-radius: 5px;
+  border: 1px solid #d17163;
+  padding: 5px;
+}
+
+.div_first, .div_second{
+  margin: 10px auto;
+}
+
 button {
   font-family: "Staatliches", cursive;
   letter-spacing: 1px;
@@ -68,7 +81,7 @@ button {
   border: none;
   border-radius: 7px;
   margin: auto;
-  margin-top: 7px;
+  margin-top: 10px;
   background: #ffc1b5;
 }
 
@@ -83,19 +96,18 @@ button:hover {
   text-align: center;
   background-color: #efa42b;
   border-radius: 7px;
-  width: 30%;
+  width: 50%;
 }
 
-
-@media (max-width:780px){
-  .form{
+@media (max-width: 780px) {
+  .form {
     width: 80%;
     padding: 20px;
   }
-  .texto-principal{
+  .texto-principal {
     font-size: 15px;
   }
-  body{
+  body {
     margin: 100px auto;
   }
 }

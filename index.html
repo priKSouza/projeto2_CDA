@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <title>Document</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>Document</title>
+</head>
+<body>
     <p class="texto-principal">Digite uma mensagem para ser codificada:</p>
 
     <form class="form">
       <input id="campo-texto" type="text" placeholder="Digite aqui" />
+      
+      <label for="inc">Incremento <input id="number" type="number" value="3" min="1" max="26" /></label>
 
+      <div class="div_first">
       <label for="cesar">
-        <input type="radio" name="cesar" id="cesar" /> Cifra de Cesar</label>
+        <input type="radio" name="cesar" id="cesar" value="c" checked/> Cifra de Cesar</label>
 
       <label for="base">
-        <input type="radio" name="base" id="base62" /> base64</label>
+        <input type="radio" name="cesar" id="base64" value="b" /> base64</label>
+      </div>
 
-      <button onclick="codifica()">Codificar</button>
-      <button onclick="decodifica()">Decodificar</button>
+        
+        <div class="div_second">
+      <label for="cod"><input type="radio" name="botao" value="um">Codificar</input></label>
+
+      <label for="decod"><input type="radio" name="botao" value="dois">Decodificar</input></label>
+    </div>
+      
+
+      <button id="alterar">Clique aqui</button>
+      <button type="reset" id="reset" class="reset">Limpar</button>
+
     </form>
 
     <div>
@@ -31,5 +44,5 @@
     </div>
     
     <script src="./index.js"></script> 
-  </body>
+</body>
 </html>
